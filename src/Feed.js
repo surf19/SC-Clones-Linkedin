@@ -1,5 +1,9 @@
 import React from "react";
 // import firebase from 'firebase';
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import 'firebase/compat/firestore';
+
 import { useState } from "react";
 import { useEffect } from "react";
 import "./Feed.css";
@@ -11,8 +15,7 @@ import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
 import EventNoteIcon from "@mui/icons-material/EventNote";
 import CalendarViewDayIcon from "@mui/icons-material/CalendarViewDay";
 import { db } from "./firebase";
-import 'firebase/firestore';
-import 'firebase/auth';
+
 
 
 function Feed() {
